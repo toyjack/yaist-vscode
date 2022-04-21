@@ -26,13 +26,7 @@ A Chinese or Japanese input method.
 
 ## Extension Settings
 
-For now nothing.
-
-## Release Notes
-
-### 0.1
-
-init
+Working on it...
 
 ## References
 
