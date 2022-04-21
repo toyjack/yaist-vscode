@@ -32,17 +32,30 @@
 		"commands": [
 			{
 				"command": "yaist-vscode.replacer",
-				"title": "[YAIST] Search selected text"
+				"title": "YAIST: Search & Replace"
+			},
+			{
+				"command": "yaist-vscode.replacerWithTemplate",
+				"title": "YAIST: Search & Replace by XML"
+			},
+			{
+				"command": "yaist-vscode.searcherWithTemplate",
+				"title": "YAIST: Search characvters and export XML code block"
 			},
 			{
 				"command": "yaist-vscode.searcher",
-				"title": "[YAIST] Input text to search"
+				"title": "YAIST: Input text to search"
 			}
 		],
 		"menus": {
       "editor/context": [
         {
 					"command": "yaist-vscode.replacer",
+					"group": "myGroup@1",
+					"when": "editorHasSelection"
+        },
+				{
+					"command": "yaist-vscode.replacerWithTemplate",
 					"group": "myGroup@1",
 					"when": "editorHasSelection"
         }
