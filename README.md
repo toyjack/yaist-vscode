@@ -29,6 +29,7 @@ Another way is input the parts of Chinese character and remaining stroke count d
 With text selected: Replacing
 
 Without text selected: Searching
+
 ### TEI XML Block
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
@@ -36,6 +37,7 @@ Without text selected: Searching
 With text selected: Replacing
 
 Without text selected: Searching
+
 ## Requirements
 
 A Chinese or Japanese input method.
