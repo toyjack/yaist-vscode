@@ -1,35 +1,32 @@
-# yaist-vscode README
+# yaist-vscode
 
-This is the README for your extension "yaist-vscode". After writing up a brief description, we recommend including the following sections.
+This is a vscode plugin for searching and inputing Chinese characters. It is something like [YAIST](https://hi-ids.netlify.app/) but work on vscode.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Searching and inputing Chinese chraracters by their components and stroke counts.
 
-For example if there is an image subfolder under your extension project workspace:
+For example you can get "𪠶" by input "土口2". The number comes at last is the remaining stroke count.
 
-\!\[feature X\]\(images/feature-x.png\)
+For now, there are 2 ways to use yaist-vscode.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Searching by a dialog
+
+Open the vscode command panel by `Ctl+Shit+p`, then input `yaist` and selected `[YAIST] Input text to search`.
+
+Then input the parts of Chinese character and remaining stroke count (optional) you're looking for.
+
+### Searching by context menu
+
+Another way is input the parts of Chinese character and remaining stroke count directly into the editor, then select them and right click to open the context menu which named `[YAIST] Search selected text`.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+A Chinese or Japanese input method.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+For now nothing.
 
 ## Release Notes
 
@@ -37,6 +34,6 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 init
 
-## 参考
+## References
 
 [konn/vscode-generic-input-method](https://github.com/konn/vscode-generic-input-method)

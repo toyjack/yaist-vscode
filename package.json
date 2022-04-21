@@ -1,7 +1,11 @@
 {
+	"private": true,
 	"name": "yaist-vscode",
 	"displayName": "yaist-vscode",
-	"description": "",
+	"icon": "images/logo.png",
+	"license": "MIT",
+  "author": "Guanwei Liu <toyjack@gmail.com>",
+	"description": "This is a vscode plugin for searching and inputing Chinese characters. It is something like [YAIST](https://hi-ids.netlify.app/) but work on vscode.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.66.0"
@@ -9,6 +13,17 @@
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+    "Chinese Characters",
+    "Hanzi",
+    "Kanji",
+    "IDS"
+  ],
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/toyjack/yaist-vscode"
+  },
+	"publisher": "toyjack",
 	"activationEvents": [
 		"*"
 	],
