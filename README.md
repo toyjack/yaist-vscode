@@ -20,6 +20,22 @@ Then input the parts of Chinese character and remaining stroke count (optional) 
 
 Another way is input the parts of Chinese character and remaining stroke count directly into the editor, then select them and right click to open the context menu which named `[YAIST] Search selected text`.
 
+## Shortcuts
+
+### Character
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>y</kbd>
+
+With text selected: Replacing
+
+Without text selected: Searching
+### TEI XML Block
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
+
+With text selected: Replacing
+
+Without text selected: Searching
 ## Requirements
 
 A Chinese or Japanese input method.
@@ -27,6 +43,11 @@ A Chinese or Japanese input method.
 ## Extension Settings
 
 Working on it...
+
+## TODOs
+
+- Fancy GIF
+- Copy to cliopboard
 
 ## References
 

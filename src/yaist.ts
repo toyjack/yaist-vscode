@@ -1,16 +1,9 @@
 import { readFileSync } from "fs";
 import * as path from "path";
-import { ExtensionContext } from 'vscode';
-
-// import { } from 'idsfind';
+import { ExtensionContext, workspace } from 'vscode';
 import { char2Unicode, getGwPngUrl, getGwSvgUrl } from './utils';
 
-// TODO: template; config; clipboard;
-
-
-//    result = context.asAbsolutePath(path.join('data', 'cjkvi_ids.txt'));
-
-
+// TODO:  config; clipboard;
 export class XmlMaker {
   public context: ExtensionContext;
   public hanzi: string;
@@ -34,6 +27,7 @@ export class XmlMaker {
     </figure>
 </glyph>
 `;
+    // let xmlBlock= await workspace.getConfiguration('yaist').get('xmlBlock') as string;
 
     let result = xmlBlock;
     // result = this.getIDS(this.hanzi);

@@ -6,7 +6,7 @@
 	"license": "MIT",
   "author": "Guanwei Liu <toyjack@gmail.com>",
 	"description": "This is a vscode plugin for searching and inputing Chinese characters. It is something like [YAIST](https://hi-ids.netlify.app/) but work on vscode.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
@@ -60,7 +60,33 @@
 					"when": "editorHasSelection"
         }
       ]
-    }
+    },
+		"keybindings":[
+			{
+				"command": "yaist-vscode.replacer",
+				"key": "ctrl+alt+y",
+				"mac": "cmd+alt+y",
+				"when": "editorHasSelection && editorTextFocus"
+			},
+			{
+				"command": "yaist-vscode.searcher",
+				"key": "ctrl+alt+y",
+				"mac": "cmd+alt+y",
+				"when": "!editorHasSelection && editorTextFocus"
+			},
+			{
+				"command": "yaist-vscode.replacerWithTemplate",
+				"key": "ctrl+alt+t",
+				"mac": "cmd+alt+t",
+				"when": "editorHasSelection && editorTextFocus"
+			},
+			{
+				"command": "yaist-vscode.searcherWithTemplate",
+				"key": "ctrl+alt+t",
+				"mac": "cmd+alt+t",
+				"when": "!editorHasSelection && editorTextFocus"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
