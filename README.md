@@ -55,3 +55,26 @@ Working on it...
 
 - [konn/vscode-generic-input-method](https://github.com/konn/vscode-generic-input-method)
 - [ldasjp8/vscode-japanese-tei](https://github.com/ldasjp8/vscode-japanese-tei)
+
+## Change Log
+
+### [0.3.0] - 2022-04-25
+
+- Added configuration of XML template
+
+### [0.2.0] - 2022-04-22
+
+- Added shortcuts
+
+### [0.1.0] - 2022-04-21
+
+- Added TEI XML support
+
+### [0.0.1] - 2022-04-20
+
+- Added replacing selected texts
+- Added searching by a dialog
+
+### [Unreleased]
+
+- Initial release
