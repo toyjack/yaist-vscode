@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const searcherWithTemplate = vscode.commands.registerTextEditorCommand(
 		'yaist-vscode.searcherWithTemplate',
 		async (editor) => {
-				const search = await vscode.window.showInputBox({ prompt: "Search for..." });
+			const search = await vscode.window.showInputBox({ prompt: "Search for..." });
 			if (!search) {
 				return;
 			}
@@ -36,8 +36,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const startPosition = editor.selection.start;
 			editor.edit((editBuilder) => {
-				const xml = new XmlMaker(context, selected!).output();
-				editBuilder.insert(startPosition, xml);
+				const config = vscode.workspace.getConfiguration('yaist-vscode');
+				const xml = new XmlMaker(context, config, selected!);
+				const xmlOutput = xml.output();
+				editBuilder.insert(startPosition, xmlOutput);
 			});
 		});
 
@@ -70,8 +72,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const selected = await vscode.window.showQuickPick(results);
 			editor.edit((editBuilder) => {
-				const xml = new XmlMaker(context, selected!).output();
-				editBuilder.replace(editor.selection, xml);
+				const config = vscode.workspace.getConfiguration('yaist-vscode');
+				const xml = new XmlMaker(context, config, selected!);
+				const xmlOutput = xml.output();
+				editBuilder.replace(editor.selection, xmlOutput);
 			});
 		});
 

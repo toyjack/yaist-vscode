@@ -86,6 +86,19 @@
 				"mac": "cmd+alt+t",
 				"when": "!editorHasSelection && editorTextFocus"
 			}
+		],
+		"configuration":[
+			{
+				"title": "YAIST",
+				"properties": {
+					"yaist-vscode.xmlTemplate":{
+						"editPresentation": "multilineText",
+						"type": "string",
+						"default":"<glyph xml:id=\"[[unicode]]\">\n     <mapping type=\"IDS\">[[IDS]]</mapping>\n     <mapping type=\"Unicode\">[[hanzi]]</mapping>\n     <mapping type=\"alt\">[[standard]]</mapping>\n     <figure>\n         <graphic url=\"[[GlyphWikiPNG]]\"/>\n     </figure>\n </glyph>\n",
+						"description": "Template for XML code block"
+					}
+				}
+			}
 		]
 	},
 	"scripts": {
