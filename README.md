@@ -57,6 +57,18 @@ Working on it...
 - [konn/vscode-generic-input-method](https://github.com/konn/vscode-generic-input-method)
 - [ldasjp8/vscode-japanese-tei](https://github.com/ldasjp8/vscode-japanese-tei)
 
+## Contribute
+
+Build and test for vscode desktop
+
+[VSCode Extensition API](https://code.visualstudio.com/api/get-started/your-first-extension)
+
+Build and test for vscode web
+
+```bash
+yarn compile-web & yarn run-in-browser
+```
+
 ## Change Log
 
 ### [0.4.0] - 2022-04-26
