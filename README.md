@@ -28,15 +28,17 @@ Another way is input the parts of Chinese character and remaining stroke count d
 
 With text selected: Replacing
 
-Without text selected: Searching
-
 ### TEI XML Block
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
 
 With text selected: Replacing
 
-Without text selected: Searching
+### Convert single Chinese character to XML code block with template
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>c</kbd>
+
+With text selected: Replacing
 
 ## Requirements
 
@@ -70,6 +72,10 @@ yarn compile-web & yarn run-in-browser
 ```
 
 ## Change Log
+
+### [0.5.0] - 2022-04-26
+
+- Added convert single Chinese character to XML code block
 
 ### [0.4.0] - 2022-04-26
 
