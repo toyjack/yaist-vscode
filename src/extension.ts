@@ -2,9 +2,17 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { idsfind } from 'idsfind';
-import { XmlMaker } from './yaist';
+import { getXmlString } from './utils';
+// import { XmlMaker } from './yaist';
 
 export function activate(context: vscode.ExtensionContext) {
+	const inputHanziToXml = vscode.commands.registerTextEditorCommand(
+		'extension.inputHanziToXml',
+		(editor) => { });
+	const convertHanziToXml = vscode.commands.registerTextEditorCommand(
+		'extension.convertHanziToXml',
+		(editor) => { });
+
 	const searcher = vscode.commands.registerTextEditorCommand(
 		'yaist-vscode.searcher',
 		async (editor) => {
@@ -36,10 +44,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const startPosition = editor.selection.start;
 			editor.edit((editBuilder) => {
-				const config = vscode.workspace.getConfiguration('yaist-vscode');
-				const xml = new XmlMaker(context, config, selected!);
-				const xmlOutput = xml.output();
-				editBuilder.insert(startPosition, xmlOutput);
+				const template = vscode.workspace.getConfiguration('yaist-vscode').get('xmlTemplate') as string;
+				const xmlString = getXmlString(selected!, template);
+				editBuilder.insert(startPosition, xmlString);
 			});
 		});
 
@@ -72,17 +79,18 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const selected = await vscode.window.showQuickPick(results);
 			editor.edit((editBuilder) => {
-				const config = vscode.workspace.getConfiguration('yaist-vscode');
-				const xml = new XmlMaker(context, config, selected!);
-				const xmlOutput = xml.output();
-				editBuilder.replace(editor.selection, xmlOutput);
+				const template = vscode.workspace.getConfiguration('yaist-vscode').get('xmlTemplate') as string;
+				const xmlString = getXmlString(selected!, template);
+				editBuilder.replace(editor.selection, xmlString);
 			});
 		});
 
 	context.subscriptions.push(replacer);
-	context.subscriptions.push(searcherWithTemplate);
 	context.subscriptions.push(replacerWithTemplate);
 	context.subscriptions.push(searcher);
+	context.subscriptions.push(searcherWithTemplate);
+	context.subscriptions.push(inputHanziToXml);
+	context.subscriptions.push(convertHanziToXml);
 }
 
 // this method is called when your extension is deactivated
