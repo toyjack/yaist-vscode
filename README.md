@@ -40,7 +40,8 @@ Without text selected: Searching
 
 ## Requirements
 
-A Chinese or Japanese input method.
+- A Chinese or Japanese input method.
+- Font covered all Unicode Chinese characters. Such as Hanazono Font.
 
 ## Extension Settings
 
@@ -57,6 +58,10 @@ Working on it...
 - [ldasjp8/vscode-japanese-tei](https://github.com/ldasjp8/vscode-japanese-tei)
 
 ## Change Log
+
+### [0.4.0] - 2022-04-26
+
+- Added support of vscode web
 
 ### [0.3.0] - 2022-04-25
 
