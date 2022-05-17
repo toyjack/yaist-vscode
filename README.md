@@ -26,13 +26,21 @@ Another way is input the parts of Chinese character and remaining stroke count d
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>y</kbd>
 
-With text selected: Replacing
+* Without selected character
+![input_character_without_selection](gifs/01_input_character_without_selection_resized.gif)
+
+* With text selected: Replacing
+![convert_to_character](gifs/03_convert_to_character_resized.gif)
 
 ### TEI XML Block
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
 
-With text selected: Replacing
+* Without selected character
+![input_xml_without_selection](gifs/02_input_xml_without_selection_resized.gif)
+
+* With text selected: Replacing
+![convert_to_xml](gifs/04_convert_to_xml_resized.gif)
 
 ### Convert single Chinese character to XML code block with template
 
@@ -42,8 +50,8 @@ With text selected: Replacing
 
 ## Requirements
 
-- A Chinese or Japanese input method.
-- Font covered all Unicode Chinese characters. Such as Hanazono Font.
+* A Chinese or Japanese input method.
+* Font covered all Unicode Chinese characters. Such as Hanazono Font.
 
 ## Extension Settings
 
@@ -51,13 +59,13 @@ Working on it...
 
 ## TODOs
 
-- Fancy GIF
-- Copy to cliopboard
+* ~~Fancy GIF~~
+* Copy to cliopboard
 
 ## References
 
-- [konn/vscode-generic-input-method](https://github.com/konn/vscode-generic-input-method)
-- [ldasjp8/vscode-japanese-tei](https://github.com/ldasjp8/vscode-japanese-tei)
+* [konn/vscode-generic-input-method](https://github.com/konn/vscode-generic-input-method)
+* [ldasjp8/vscode-japanese-tei](https://github.com/ldasjp8/vscode-japanese-tei)
 
 ## Contribute
 
