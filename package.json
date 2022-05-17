@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"author": "Guanwei Liu <toyjack@gmail.com>",
 	"description": "This is a vscode plugin for searching and inputing Chinese characters. It is something like [YAIST](https://hi-ids.netlify.app/) but work on vscode.",
-	"version": "0.5.0",
+	"version": "0.5.1",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
